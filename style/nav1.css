@@ -1,7 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 #amaricon {
     height: 30px;
     width: 100%;
     display: inline-flex;
+    height: 40px;
 }
 #amarlogindiv {
     width: 100%;
@@ -19,7 +24,7 @@
     width: 800px;
     justify-content: space-between;
     margin-left: 100px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 200px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
@@ -36,7 +41,7 @@
     font-size: 15px;
     font-weight: bold;
     color: rgb(92,92,92);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 #amaroption{
     display: flex;
@@ -60,5 +65,6 @@
 #amarlogo{
     margin-left: 100px;
     height: 70px;
+    margin-top: 10px;
 }
 
