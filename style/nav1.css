@@ -51,10 +51,10 @@
     
 
 }
-#amaroption>div:hover{
+#amaroption>p:hover{
     border-bottom: 5px solid rgb(29,29,29);
 }
-#amaroption>div{
+#amaroption>p{
     font-family: 'sans-serif';
     font-size: 16px;
     font-weight: bold;
