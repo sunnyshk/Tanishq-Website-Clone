@@ -1,0 +1,25 @@
+#amarsliderbox{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    animation: 10s ease-in 1s reverse infinite img
+}
+#slider img{
+    width: 100%;
+}
+@keyframes img {
+
+    from {
+        transform: translateX(100%);
+      }
+    
+      to {
+        transform: translateX(-100%);
+      }
+    
+}
