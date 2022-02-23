@@ -16,7 +16,6 @@
     margin-bottom: 10px;
     /* position: sticky;  new */
     position: sticky;
-    top: 0px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 #amarmenu {
@@ -26,7 +25,7 @@
     margin-left: 100px;
     margin-top: 10px;
     margin-left: 200px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'sans-serif';
     font-size: 15px;
     font-weight: bold;
     color: rgb(92,92,92);
@@ -37,7 +36,7 @@
     width: 500px;
     margin-left: 100px;
     justify-content: space-around;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'sans-serif';
     font-size: 15px;
     font-weight: bold;
     color: rgb(92,92,92);
@@ -47,7 +46,7 @@
     display: flex;
     justify-content: space-around;
     width: 1000px;
-    margin-right: 140px;
+    margin-right: 200px;
     margin-top: 40px;
     
 
@@ -56,14 +55,14 @@
     border-bottom: 5px solid rgb(29,29,29);
 }
 #amaroption>div{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 15px;
+    font-family: 'sans-serif';
+    font-size: 16px;
     font-weight: bold;
     color: rgb(92,92,92);
     
 }
 #amarlogo{
-    margin-left: 100px;
+    margin-left: 80px;
     height: 70px;
     margin-top: 10px;
 }
