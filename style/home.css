@@ -7,7 +7,7 @@
 #slider{
     width: 100%;
     display: inline-flex;
-    animation: 10s ease-in 1s reverse infinite img
+    animation: img 30s linear 5s reverse forwards
 }
 #slider img{
     width: 100%;
@@ -15,11 +15,12 @@
 @keyframes img {
 
     from {
-        transform: translateX(100%);
+        transform: translateX(-400%);
+        transition-delay: 3s;
       }
     
       to {
-        transform: translateX(-100%);
+        transform: translateX(0%);
       }
     
 }
