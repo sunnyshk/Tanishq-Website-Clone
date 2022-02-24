@@ -1,0 +1,128 @@
+
+#maincontainerrth{
+    width:40vw;
+    height:90vh;
+    margin:auto;
+}
+#logorth1{
+    width:100%;
+    height:20%;
+    display:flex;
+    justify-content: center;
+}
+#logorth1>img{
+   width:200px;
+   height:100%;
+
+}
+p{
+    text-align: center;
+    font-family: "Playfair Display",sans-serif;
+  /* font-weight: bold; */
+  font-size:25px;
+  color: inherit;
+ 
+  margin:0px;
+   
+}
+#signuprth{
+    width:80%;
+    /* height:700px; */
+    border:1px solid black;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+#titlerth{
+    width:20%;
+    height:50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(246,246,246);
+    border:0px;
+    margin:20px;
+    font-family:"Roboto",sans-serif; ;
+}
+#namerth{
+    height:50px;
+    width:62%;
+    background-color: rgb(246,246,246);
+    border:0px;
+    margin:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+}
+#lastrth{
+    height:50px;
+    width:90%;
+    background-color: rgb(246,246,246);
+    border:0px;
+    margin:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+#numbrth{
+    height:50px;
+    width:90%;
+    background-color: rgb(246,246,246);
+    border:0px;
+    margin:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    text-align: center;  
+}
+#mailrth{
+    height:50px;
+    width:90%;
+    background-color: rgb(246,246,246);
+    border:0px;
+    margin:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    text-align: center;  
+}
+#passwordrth{
+    height:50px;
+    width:90%;
+    background-color: rgb(246,246,246);
+    border:0px;
+    margin:20px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    text-align: center; 
+
+}
+.remrth{
+    width:100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 10px;
+}
+.remrth>p{
+    font-size: 15px;
+}
+.remrth>img{
+    width:20px;
+    height:20px;
+    margin:5px;
+}
+.green{
+    color:rgb(76,199,90)
+}
+form>input:nth-last-child(1){
+    width:100%;
+    height:50px;
+    background-color: rgb(24,24,24);
+    color:white;
+    font-family: "Raleway",sans-serif; 
+    font-size: 20px;
+
+}
+
+
+
+
