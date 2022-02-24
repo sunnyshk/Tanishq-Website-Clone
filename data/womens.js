@@ -1,4 +1,4 @@
-women_Data=[
+women_data=[
     {
     	id:1,
     	image_link:"https://staticimg.titan.co.in/Tanishq/Catalog/500104SQAABAPL_1.jpg?impolicy=pqmed&imwidth=640",
@@ -302,3 +302,6 @@ women_Data=[
 	
     },
 ]
+var W=JSON.stringify(women_data);
+localStorage.setItem("Women_Data",W);
+console.log(W)

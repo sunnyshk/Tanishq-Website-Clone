@@ -281,3 +281,6 @@ Men_Data=[
     }
 ]
   
+var M=JSON.stringify(Men_Data);
+localStorage.setItem("mensData",M);
+console.log(M)
