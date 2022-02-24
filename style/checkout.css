@@ -1,0 +1,183 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#checkout_nav{
+    width:100%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 0.5px solid rgb(243, 234, 234);
+}
+#checkout_nav>div:nth-child(1){
+    margin-left: 60px;
+}
+#checkout_nav>div:nth-child(2){
+    margin-right: 50px;
+    padding-top: 5px;
+}
+#checkout_nav>div img{
+   margin-top: 10px;
+}
+#checkout_nav>div:nth-child(2) p:nth-child(1){
+    font-weight: bold;
+    font-size: small;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+#checkout_nav>div:nth-child(2) p:nth-child(2){
+    font-size: small;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+#checkout_nav>div:nth-child(2) p:nth-child(2) a {
+    color:black;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    letter-spacing: 3px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* div{
+    border:1px solid black;
+} */
+.checkout_text{
+    width: 90%;
+    min-height: 50px;
+    margin:auto;
+    border-bottom: 1px solid rgb(201, 197, 197);
+    padding:10px 0 0 10%;
+    font-size: small;
+    font-weight:bold;
+    letter-spacing: 1px;
+}
+.checkout_username,.checkout_payment,.checkout_payment1{
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+    border-bottom: 1px solid rgb(201, 197, 197);
+}
+
+.checkout_username>p{
+    font-size: 27px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    cursor: pointer;
+    
+}
+/* .checkout_payment,.checkout_payment1{
+    padding-top: 10px;
+    height: 80px;
+} */
+.checkout_payment>label,.checkout_payment1>label{
+    font-size: 27px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.checkout_payment input{
+    display: none;
+}
+.checkout_payment input:checked ~ .payment_form{
+   display:block;
+}
+.checkout_username>p>i,.checkout_payment>label>i,.checkout_payment1>label>i{
+    font-size: 35px;
+    margin-left: 170px;
+    padding:5px 15px 0 0;
+    font-weight: lighter;
+}
+.checkout_payment>label>i,.checkout_payment1>label>i{
+    padding-right: 23px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    /* margin-left: 180px; */
+}
+/* .checkout_payment1>labe{
+    padding-right: 27px;
+} */
+.payment_form{
+   width:70%;
+   height: 500px;
+   margin: auto;
+   padding-left: 10px;
+   display: none;
+}
+select{
+    border: none;
+    background-color:rgb(246,246,246);
+    width:200px;
+    height:60px;
+    font-size: medium;
+}
+ #input_details{
+    border: none;
+    background-color:rgb(246,246,246);
+    width:400px;
+    height:60px;
+    font-size: medium;
+}
+.checkout_bottom{
+    border:1px solid rgb(176,161,110);
+    background-color: rgb(176,161,110) ;
+    width: 100%;
+    height: 350px;
+    margin-top: 100px;
+    color:white;
+}
+.checkout_bottom .bottom_option{
+   width: 80%;
+   border-bottom:1px solid rgb(160,140,80);
+   margin: auto;
+   margin-top: 30px;
+}
+.checkout_bottom .bottom_option a{
+    text-decoration: none;
+    color:white;
+    letter-spacing: 2px;
+}
+.checkout_bottom .payment_option{
+    width:60%;
+    margin-top:30px;
+    margin-left: 150px;
+    display: flex;
+    text-align: left;
+    letter-spacing: 2px;
+}
+.checkout_bottom .payment_option div{
+    font-size: x-small;
+    padding-right: 40px;
+}
+#checkout_icons{
+    margin-left: 150px;
+}
+#checkout_icons>i{
+
+    padding: 20px 50px 0 0px;
+}
+.help_page_container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.help_page_container .help_head{
+    width: max-content;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+}
+.help_page_container .contact_details{
+    width:75%;
+    height:250px;
+    background-color: rgb(251,251,251);
+    margin: auto;
+    margin-top: 50px;
+    /* display: grid;
+    grid-template-columns: repeat(3,25%);
+    grid-template-rows: 50%; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
