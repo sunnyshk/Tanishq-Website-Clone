@@ -1,0 +1,11 @@
+#incon{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#incon div{
+    text-align: center;
+}
+
+#incon > div img{
+    width: 100%;
+}
