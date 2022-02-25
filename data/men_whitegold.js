@@ -48,3 +48,6 @@ Men_Whitegold_Data=[
 	    type:"White Gold"
     },
 ]
+var MW=JSON.stringify(Men_Whitegold_Data);
+localStorage.setItem("mensDataWhitegold",MW);
+console.log(MW)

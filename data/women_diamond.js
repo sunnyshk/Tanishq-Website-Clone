@@ -100,3 +100,6 @@ Women_Diamond_Data=[
 	
     },   
 ]
+var WD=JSON.stringify(Women_Diamond_Data);
+localStorage.setItem("WomenDataDiamond",WD);
+console.log(WD)

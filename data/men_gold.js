@@ -137,4 +137,6 @@ let Men_Gold_Data =[
     },
 ]
 
-export {Men_Gold_Data};
+var MG=JSON.stringify(Men_Gold_Data);
+localStorage.setItem("mensDataGold",MG);
+console.log(MG)
