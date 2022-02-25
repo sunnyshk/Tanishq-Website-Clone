@@ -6,12 +6,12 @@ function navbar(){
         <div>GOLD RATE <i class="fas fa-angle-down"></i></div>
     </div>
     <div id="amarmenu">
-        <div><a href='../pages/login.html'>LOGIN</a></div>
+        <div id="amarname"><a href='../pages/login.html'>LOGIN</a></div>
         <div>ENCIRCLE</div>
         <div>GOLDEN HARVEST</div>
         <div>BOOK AN APPOINTEMENT</div>
         <div>WISHLIST</div>
-        <div> <a href="../pages/cart.html">CART(0)</a></div>
+        <div id="amartocart"> <a href="../pages/cart.html">CART(0)</a></div>
     </div>
 </div>
 <hr>
