@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style/checkout.css">
+    <link rel="stylesheet" href="/style/nav1.css">
     <script src="https://kit.fontawesome.com/a8241bed30.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div></div>
+    <div id="help_navbar">
+
+    </div>
     <div class="help_page_container">
         <div class="helpHead"><a href="">Home</a>>Help&Contact</div>
         <div class="help_head">HELP & CONTACT</div>
@@ -153,3 +156,11 @@ Our delivery partners will only accept Indian Rupees. Denominations of Rs 500 an
     </div>
 </body>
 </html>
+<script type="module">
+    import navbar from "/script/nav.js"
+
+    let help_nav=document.getElementById("help_navbar");
+    help_nav.innerHTML=navbar();
+
+
+</script>

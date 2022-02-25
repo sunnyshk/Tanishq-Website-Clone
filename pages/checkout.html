@@ -44,13 +44,13 @@
            </select>
            <div class="checkout_personal">
             <p style="color: gray; font-size: small;margin-bottom: 5px;">FIRST NAME *</p>
-            <input  type="text" readonly>     
+            <input id="checkout_firstName"  type="text" readonly>     
             <p style="color: gray; font-size: small;margin-bottom: 5px;">LAST NAME *</p>
-            <input type="text" readonly>
+            <input id="checkout_lastName" type="text" readonly>
             <p style="color: gray; font-size: small;margin-bottom: 5px;">EMAIL ADDRESS *</p>
-            <input type="email" readonly>
+            <input id="checkout_email" type="email" readonly>
             <p style="color: gray; font-size: small;margin-bottom: 5px;">PHONE NUMBER *</p>
-            <input type="tel" readonly>  
+            <input id="checkout_phone" type="tel" readonly>  
            </div> 
            <div class="delivery_information">
             <p style="font-size: 30px; font-family: 'Times New Roman', Times, serif; ">DELIVERY DETAILS</p>
@@ -85,38 +85,62 @@
                              <option value="">MALAYASIA</option>
                         </select>
                         <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">PIN-CODE/ZIP-CODE *</p>
-                        <input type="number" placeholder="6 Digit Pincode">
+                        <input id="zipcode" type="number" placeholder="6 Digit Pincode">
                         <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">STATE *</p>
-                        <input type="number" >
+                        <input id="stateDel"  type="text" >
                         <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">CITY *</p>
-                        <input type="number" >
+                        <input id="cityDel" type="text" >
                         <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">STREET ADDRESS / BUILDING / LOCALITY *</p>
-                        <input type="number" placeholder="Flat no,House no,Street name" >
+                        <input id="addressDel" type="text" placeholder="Flat no,House no,Street name" >
                         <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">NICK NAME*</p>
-                        <input type="number" >
+                        <input id="nick" type="text" >
                         <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">ALTERNATE MOBILE(optional) *</p>
-                        <input type="number">              
+                        <input id="phoneDel" type="number">              
                     </div>
                 <div style="margin: 50px 0px;">
-                <button  style="font-size:small; margin-left:0px; padding:10px 20px; border: none; background-color: black; color:white;">CONTINUE TO REVIEW ORDER</button>
+                <button onclick="checking_out()" style="font-size:small; margin-left:0px; padding:10px 20px; border: none; background-color: black; color:white;">CONTINUE TO REVIEW ORDER</button>
                 </div>
             </div>
            </div>
+           
+        </div>
+        <div class="checkout_payment1" style="padding: 23px;">
+            <input type="checkbox" id="order_review">
+            <label  for="order_review">
+           
+                <i class="fa-solid fa-3"></i>ORDER REVIEW</label>
+                <div class="order__review">
+                    <p> Please review your order to ensure your details are correct.</p>
+                    <p>If you have reviewed your order, you can proceed to the next stage and make the payment.</p>
+
+                    <div style="width: 100%; border:1px solid black; display: flex;">
+                        <div id="added_items">
+                         
+                        </div>
+                        <div id="added_address">
+
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    <div class="checkout_payment1">
-        <label  for="checkout_details1">
-       
-            <i class="fa-solid fa-3"></i>ORDER REVIEW</label>
-    </div>
-    <div class="checkout_payment1">
-        <label  for="checkout_details1">
-       
-            <i class="fa-solid fa-4"></i>PAYMENT INFORMATION</label>
-    </div>
-
-
     
+    <div class="checkout_payment2">
+        <input type="checkbox" id="checkbox_payment">
+        <label  for="checkbox_payment">
+            <i class="fa-solid fa-4"></i>PAYMENT INFORMATION</label>
+            <div class="checkbox__payment">
+                 <p>
+                    In order to process your order, we need to gather your payment details.
+                    Please select a mode of payment below. You will be securely
+                    redirected to our partner site to process this order.
+                 </p>
+
+            </div>
+    </div>
+
+
+
     <div class="checkout_bottom">
         <div class="bottom_option">
           <div><p style="font-size: large; letter-spacing: 2px; ">Customer Service</p></div>
@@ -138,12 +162,9 @@
     </div>
 </body>
 </html>
-<script>
+<script src="/script/checkout.js">
     
-    
-    let div_username=document.querySelector(".checkout_username>p")
-    div_username.innerHTML='<i class="fa-regular fa-circle-check fa-2x"></i>'+"SIGNED IN AS USERNAME";
-
+  
        
 
 </script>
