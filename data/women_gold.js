@@ -150,3 +150,6 @@ Women_Gold_Data=[
 	
     },
 ]
+var WG=JSON.stringify(Women_Gold_Data);
+localStorage.setItem("WomenDataGold",WG);
+console.log(WG)

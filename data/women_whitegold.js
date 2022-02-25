@@ -50,3 +50,6 @@ Women_Whitegold_Data=[
 	
     },
 ]
+var WW=JSON.stringify(Women_Whitegold_Data);
+localStorage.setItem("WomenDataWhitegold",WW);
+console.log(WW)
