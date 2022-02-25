@@ -13,6 +13,7 @@ function signin(){
 
   for(var a = 0; a<regdUsers.length; a++){
       if(regdUsers[a].emailAdd == email && regdUsers[a].passwd == pass){
+          localStorage.setItem('name',JSON.stringify(regdUsers[a].name))
           window.location.href = "home.html";
           alert("You Can Shop Now With Best Offers!");
          continue;
