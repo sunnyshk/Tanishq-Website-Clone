@@ -205,4 +205,10 @@ function displayTotal() {
   });
 }
 
+var total_cart = localStorage.getItem("cartLength");
+if (total_cart > 0) {
+  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+}
 
+var name = JSON.parse(localStorage.getItem("name"));
+document.getElementById("amarname").textContent = name;

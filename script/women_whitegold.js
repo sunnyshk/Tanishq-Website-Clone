@@ -2,6 +2,8 @@
 // let nav=document.getElementById('hamcont');
 // nav.innerHTML=navbar();
 
+
+
 var WomenDataWhitegold = JSON.parse(localStorage.getItem("WomenDataWhitegold"));
 console.log(WomenDataWhitegold);
 
@@ -35,7 +37,7 @@ function displayData(WomenDataWhitegold) {
 
     //create image
     var img = document.createElement("img");
-    img.setAttribute("class","ham")
+    img.setAttribute("class", "ham");
     img.setAttribute("src", data.image_link);
 
     //name creation
@@ -81,3 +83,22 @@ function displayData(WomenDataWhitegold) {
     document.querySelector("#containermen").append(div);
   });
 }
+
+function addtocart(data) {
+  console.log(data, "data");
+  cart.push({
+    ...data,
+    units: 1,
+  });
+  localStorage.setItem("CartItems", JSON.stringify(cart));
+  localStorage.setItem("cartLength", cart.length);
+  alert("added successfully");
+}
+
+var total_cart = localStorage.getItem("cartLength");
+if (total_cart > 0) {
+  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+}
+
+var name = JSON.parse(localStorage.getItem("name"));
+document.getElementById("amarname").textContent = name;

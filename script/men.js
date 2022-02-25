@@ -2,6 +2,8 @@
 // let nav=document.getElementById('hamcont');
 // nav.innerHTML=navbar();
 
+
+
 var mensData = JSON.parse(localStorage.getItem("mensData"));
 console.log(mensData);
 
@@ -12,7 +14,6 @@ displayData(mensData);
 // var wishlist =JSON.parse(localStorage.getItem("WishlistItems"))||[]
 
 // displayData(mensData);
-
 
 function handlePriceSort() {
   var selected = document.querySelector("#priceSort").value;
@@ -61,14 +62,14 @@ function categoryw() {
 }
 
 function displayData(mensData) {
-  console.log(mensData)
+  console.log(mensData);
   document.querySelector("#containermen").innerHTML = "";
 
   mensData.map(function (data) {
     var div = document.createElement("div");
 
     var img = document.createElement("img");
-    img.setAttribute("class","ham")
+    img.setAttribute("class", "ham");
     img.setAttribute("src", data.image_link);
 
     var divr = document.createElement("div");
@@ -126,17 +127,22 @@ function displayData(mensData) {
 //   }
 // }
 
-
-
-
 function addtocart(data) {
   console.log(data, "data");
   cart.push({
     ...data,
-    units:1,
+    units: 1,
   });
   localStorage.setItem("CartItems", JSON.stringify(cart));
-  localStorage.setItem('cartLength', cart.length);
+  localStorage.setItem("cartLength", cart.length);
 
   alert("added successfully");
 }
+
+var total_cart = localStorage.getItem("cartLength");
+if (total_cart > 0) {
+  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+}
+
+var name = JSON.parse(localStorage.getItem("name"));
+document.getElementById("amarname").textContent = name;

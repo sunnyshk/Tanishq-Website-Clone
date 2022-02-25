@@ -2,6 +2,8 @@
 // let nav=document.getElementById('hamcont');
 // nav.innerHTML=navbar();
 
+
+
 var mensDataWhitegold = JSON.parse(localStorage.getItem("mensDataWhitegold"));
 console.log(mensDataWhitegold);
 
@@ -12,7 +14,6 @@ displayData(mensDataWhitegold);
 // var wishlist =JSON.parse(localStorage.getItem("WishlistItems"))||[]
 
 // displayData(mensDataWhitegold);
-
 
 function handlePriceSort() {
   var selected = document.querySelector("#priceSort").value;
@@ -33,7 +34,6 @@ function handlePriceSort() {
 
 // displayData(mensDataWhitegold)
 
-
 function displayData(mensDataWhitegold) {
   document.querySelector("#containermen").innerHTML = "";
 
@@ -41,7 +41,7 @@ function displayData(mensDataWhitegold) {
     var div = document.createElement("div");
 
     var img = document.createElement("img");
-    img.setAttribute("class","ham")
+    img.setAttribute("class", "ham");
     img.setAttribute("src", data.image_link);
 
     var divr = document.createElement("div");
@@ -85,17 +85,23 @@ function displayData(mensDataWhitegold) {
   });
 }
 
-
-
-
 function addtocart(data) {
   console.log(data, "data");
   cart.push({
     ...data,
-    units:1,
+    units: 1,
   });
   localStorage.setItem("CartItems", JSON.stringify(cart));
-  localStorage.setItem('cartLength', cart.length);
+  localStorage.setItem("cartLength", cart.length);
 
   alert("added successfully");
 }
+
+var total_cart = localStorage.getItem("cartLength");
+
+if (total_cart > 0) {
+  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+}
+
+var name = JSON.parse(localStorage.getItem("name"));
+document.getElementById("amarname").textContent = name;
