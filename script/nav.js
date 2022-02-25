@@ -6,12 +6,12 @@ function navbar(){
         <div>GOLD RATE <i class="fas fa-angle-down"></i></div>
     </div>
     <div id="amarmenu">
-        <div>LOGIN</div>
+        <div><a href='../pages/login.html'>LOGIN</a></div>
         <div>ENCIRCLE</div>
         <div>GOLDEN HARVEST</div>
         <div>BOOK AN APPOINTEMENT</div>
         <div>WISHLIST</div>
-        <div>CART(0)</div>
+        <div> <a href="../pages/cart.html">CART(0)</a></div>
     </div>
 </div>
 <hr>
@@ -25,8 +25,8 @@ function navbar(){
                 <div id="amarmewolist">
                     <div id="amargender">
                         <p style="font-weight:lighter"><b>GENDER</b></p>
-                        <p style="font-weight:lighter"> </p>
-                        <P style="font-weight:lighter"><a href="../pages/women.html"> WOMEN</a></P>
+                        <p style="font-weight:lighter; margin-top:15px">MEN </p>
+                        <P style="font-weight:lighter;margin-top:15px"><a href="../pages/women.html"> WOMEN</a></P>
                         <p style="font-weight:lighter">KIDS</p>
                         <p style="font-weight:lighter">UNISEX</p>
                     </div>
