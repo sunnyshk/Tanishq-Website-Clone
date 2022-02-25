@@ -113,9 +113,9 @@ function displayData(mensData) {
 
 
 
-// function addtocart(data) {
-//   console.log(data, "data");
-//   cart.push(data);
-//   localStorage.setItem("CartItems", JSON.stringify(cart));
-//   alert("added successfully");
-// }
+function addtocart(data) {
+  console.log(data, "data");
+  cart.push(data);
+  localStorage.setItem("CartItems", JSON.stringify(cart));
+  alert("added successfully");
+}
