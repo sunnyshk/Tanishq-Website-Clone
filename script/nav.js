@@ -6,12 +6,12 @@ function navbar(){
         <div>GOLD RATE <i class="fas fa-angle-down"></i></div>
     </div>
     <div id="amarmenu">
-        <div>LOGIN</div>
+        <div id="amarname"><a href='../pages/login.html'>LOGIN</a></div>
         <div>ENCIRCLE</div>
         <div>GOLDEN HARVEST</div>
         <div>BOOK AN APPOINTEMENT</div>
         <div>WISHLIST</div>
-        <div>CART(0)</div>
+        <div id="amartocart"> <a href="../pages/cart.html">CART(0)</a></div>
     </div>
 </div>
 <hr>
@@ -24,30 +24,30 @@ function navbar(){
 
                 <div id="amarmewolist">
                     <div id="amargender">
-                        <p><b>GENDER</b></p>
-                        <p>MEN</p>
-                        <P>WOMEN</P>
-                        <p>KIDS</p>
-                        <p>UNISEX</p>
+                        <p style="font-weight:lighter"><b>GENDER</b></p>
+                        <p style="font-weight:lighter; margin-top:15px"> <a href="../pages/men.html">MEN </a></p>
+                        <P style="font-weight:lighter;margin-top:15px"><a href="../pages/women.html"> WOMEN</a></P>
+                        <p style="font-weight:lighter">KIDS</p>
+                        <p style="font-weight:lighter">UNISEX</p>
                     </div>
                     <div id="amargender">
                         <p><b>CATEGORY</b></p>
-                        <p>ALL JEWELLERY</p>
-                        <P>PENDANTS </P>
-                        <p>MANGALSUTRA</p>
-                        <p>CHAIN</p>
-                        <p>NECKLACES</p>
-                        <p>NOSE PIN</p>
+                        <p style="font-weight:lighter"> <a href="../pages/men_gold.html">MEN GOLD</a> </p>
+                        <P style="font-weight:lighter"> <a href="../pages/women_gold.html">WOMEN GOLD</a></P>
+                        <p style="font-weight:lighter">   <a href="../pages/men_diamond.html">MEN DIAMOND </a></p>
+                        <p style="font-weight:lighter">  <a href="../pages/women_diamond.html">WOMEN DIAMOND </a></p>
+                        <p style="font-weight:lighter">  <a href="../pages/men_whitegold.html">MEN WHITE GOLD </a></p>
+                        <p style="font-weight:lighter">  <a href="../pages/women_whitegold.html">WOMEN WHITE GOLD </a></p>
                     </div>
                     <div id="amargender">
                         <p><b>PRICE BAND</b></p>
-                        <p>LESS THAN 5K</p>
-                        <p> 5K-10K </p>
-                        <P>10K-20K</P>
-                        <p>20K-30K</p>
-                        <p>30K-40K</p>
-                        <p>40K-50K</p>
-                        <p>MORE THAN 50K</p>
+                        <p style="font-weight:lighter">LESS THAN 5K</p>
+                        <p style="font-weight:lighter"> 5K-10K </p>
+                        <P style="font-weight:lighter">10K-20K</P>
+                        <p style="font-weight:lighter">20K-30K</p>
+                        <p style="font-weight:lighter">30K-40K</p>
+                        <p style="font-weight:lighter">40K-50K</p>
+                        <p style="font-weight:lighter">MORE THAN 50K</p>
                     </div>
                 </div>
 
