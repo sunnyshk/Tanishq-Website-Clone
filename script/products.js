@@ -1,8 +1,6 @@
-import {Men_Gold_Data} from "/Tanishq/data/men_gold.js"
-let mdiv = document.getElementById("incon");
-displayData(Men_Gold_Data, mdiv);
 
-let cart = JSON.parse(localStorage.getItem("cartItms")) || [];
+
+let cart = JSON.parse(localStorage.getItem("CartItems")) || [];
 
 function displayData(data, target) {
   data.map((el) => {
@@ -34,7 +32,7 @@ function displayData(data, target) {
         units: 1,
       });
       console.log(cart);
-      localStorage.setItem("cartItms", JSON.stringify(cart));
+      localStorage.setItem("CartItems", JSON.stringify(cart));
     }
   }
 }
