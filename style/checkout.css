@@ -51,11 +51,22 @@ body{
     font-weight:bold;
     letter-spacing: 2px;
 }
-.checkout_username,.checkout_payment,.checkout_payment1{
+.checkout_username,.checkout_payment{
     width: 95%;
     margin: auto;
     margin-top: 5px;
     border-bottom: 1px solid rgb(201, 197, 197);
+}
+.checkout_payment1{
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+    border-top: 1px solid rgb(201, 197, 197); 
+}
+.checkout_payment2{
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
 }
 
 .checkout_username>p{
@@ -69,7 +80,7 @@ body{
     padding-top: 10px;
     height: 80px;
 } */
-.checkout_payment>label,.checkout_payment1>label{
+.checkout_payment>label,.checkout_payment1>label,.checkout_payment2>label{
     font-size: 27px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: lighter;
@@ -88,13 +99,16 @@ body{
     padding:5px 15px 0 0;
     font-weight: lighter;
 }
-.checkout_payment>label>i,.checkout_payment1>label>i{
+.checkout_payment1{
+    margin-left: -20px;
+}
+.checkout_payment>label>i,.checkout_payment1>label>i,.checkout_payment2>label>i{
     font-size: 35px;
     margin-left: 150px;
     padding:5px 15px 0 0;
     font-weight: lighter;
 }
-.checkout_payment>label>i,.checkout_payment1>label>i{
+.checkout_payment>label>i,.checkout_payment2>label>i{
     padding-right: 23px;
     padding-top: 15px;
     padding-bottom: 20px;
@@ -202,6 +216,41 @@ select:focus{
 .delivery_checkout>p{
     margin-top: 40px;
 }
+
+#order_review{
+    display: none;
+
+}
+#order_review:checked ~ .order__review{
+   display: block;
+}
+.order__review{
+   display: none;
+   padding-left: 150px;
+}
+
+
+
+#checkbox_payment{
+    display: none;
+}
+
+.checkbox__payment{
+    width: 50%;
+    margin-left: 150px;
+    display: none;
+}
+#checkbox_payment:checked ~ .checkbox__payment{
+    display:block;
+}
+
+
+
+
+
+
+
+
 .help_page_container{
     width: 90%;
     margin: auto;
@@ -363,6 +412,7 @@ label{
 }
 .bottom_cs1>p{
     font-size: large;
+    margin-top: 30px;
 }
 .bottom_cs1>p>i{
     padding-left: 30px;
@@ -371,6 +421,7 @@ label{
    border: none;
    outline-style:outset;
    outline-color: white;
+   margin-top: 30px;
    height:50px;
    width:100px;
    color:rgb(176,161,110);
@@ -383,6 +434,7 @@ label{
 .app_image>img{
     width: 60%;
     height: fit-content;
+    margin-top: 20px;
 }
 
 .help_bottom>.payment_option{
