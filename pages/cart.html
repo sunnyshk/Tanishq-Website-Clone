@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Tanishq/style/cart.css" />
+    <link rel="stylesheet" href="../style/cart.css"/>
     <title>Cart</title>
   </head>
   <body>
@@ -23,7 +23,22 @@
         </div>
       </div>
       <div id="con-right">
-        <h1>ORDER SUMMARY</h1>
+        <h1 class="titles">ORDER SUMMARY</h1>
+        <div class="head">
+          <h4 class="vouch">ENTER VOUCHER CODE</h2>
+          <h4 class="gray">VIEW PROMO CODES</h2>
+        </div>
+        <div class="promoCode">
+          <input type="text" id="promo">
+          <button class="promobtn">Apply</button>
+        </div>
+        <div class="totalDisplay">
+          <p class="titm"></p>
+          <p>SHIPPING<span class="free">FREE</span> </p>
+          <p class="fdisc">DISCOUNT<span class="disc">₹0</span> </p>
+          <h1 class="upy"></h1>
+          <h5>INCLUSIVE OF ALL TAXES*</h5>
+        </div>
       </div>
     </div>
   </body>

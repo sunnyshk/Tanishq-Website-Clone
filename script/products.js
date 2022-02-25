@@ -1,6 +1,6 @@
-import men_Data from "../data/test.js";
+import {Men_Gold_Data} from "/Tanishq/data/men_gold.js"
 let mdiv = document.getElementById("incon");
-displayData(men_Data, mdiv);
+displayData(Men_Gold_Data, mdiv);
 
 let cart = JSON.parse(localStorage.getItem("cartItms")) || [];
 
@@ -28,7 +28,7 @@ function displayData(data, target) {
     if (cart.some((item) => item.id == elem.id)) {
       alert("Items is already in the cart");
     } else {
-      let item = men_Data.find((product) => product.id === elem.id);
+      let item = Men_Gold_Data.find((product) => product.id === elem.id);
       cart.push({
         ...item,
         units: 1,

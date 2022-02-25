@@ -1,4 +1,4 @@
-Men_Gold_Data=[
+let Men_Gold_Data =[
     {
     	id:1,
     	image_link:"https://staticimg.titan.co.in/Tanishq/Catalog/512621FEOAA00_1.jpg?impolicy=pqmed&imwidth=640",
@@ -136,3 +136,5 @@ Men_Gold_Data=[
 	    type:"Gold"
     },
 ]
+
+export {Men_Gold_Data};
