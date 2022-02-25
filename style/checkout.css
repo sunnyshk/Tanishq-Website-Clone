@@ -452,3 +452,24 @@ label{
 .bottom_icons>i{
     padding-right: 60px;
 }
+
+
+
+
+
+#added_items{
+  width:50%;
+  text-align: center;
+  border-bottom: 1px rgb(231, 228, 228);
+}
+#added_items>div>img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.images>img{
+    width:40px;
+    height: 40px;
+    padding-right: 20px;
+}
