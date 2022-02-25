@@ -23,25 +23,85 @@
     <div class="checkout_text">
         <p>PLACE YOUR ORDER IN 4 EASY STEPS</p>
     </div>
-    <div class="checkout_username">
-        <p> </p>
-    </div>
+    
+    
     <div class="checkout_payment">
         <input id="checkout_details" type="checkbox">
         <label  for="checkout_details">
+            <div class="checkout_username">
+                <p> </p>
+            </div>
        
         <i class="fa-solid fa-2"></i>DELIVERY INFORMATION</label>
         <div class="payment_form">
            <p>In order to deliver your order, we need to gather some information from you. Please fill the form below.</p>
-           <p class="personal_information">YOUR PERSONAL DETAILS</p>
-           <p style="color: gray; font-size: small;margin-bottom: 5px;">TITLE  *</p>
+           <p style="font-size: 30px; font-family: 'Times New Roman', Times, serif; ">YOUR PERSONAL DETAILS</p>
+           <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">TITLE  *</p>
            <select name="" id="">
                <option value="">Select Title</option>
                <option value="Mr">Mr</option>
                <option value="Ms">Ms</option>
            </select>
-           <p style="color: gray; font-size: small;margin-bottom: 5px;">FIRST NAME  *</p>
-           <input type="text">
+           <div class="checkout_personal">
+            <p style="color: gray; font-size: small;margin-bottom: 5px;">FIRST NAME *</p>
+            <input  type="text" readonly>     
+            <p style="color: gray; font-size: small;margin-bottom: 5px;">LAST NAME *</p>
+            <input type="text" readonly>
+            <p style="color: gray; font-size: small;margin-bottom: 5px;">EMAIL ADDRESS *</p>
+            <input type="email" readonly>
+            <p style="color: gray; font-size: small;margin-bottom: 5px;">PHONE NUMBER *</p>
+            <input type="tel" readonly>  
+           </div> 
+           <div class="delivery_information">
+            <p style="font-size: 30px; font-family: 'Times New Roman', Times, serif; ">DELIVERY DETAILS</p>
+            <div style="display: block;">
+                <div style="display: block;">
+                    <input id="checkbox_" type="checkbox" checked="checked" >
+                <label for="checkbox_" style="margin-top:-2px; cursor: pointer;">Use personal details to deliver your items</label>
+                <div class="checkout_personal1">
+                    <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">TITLE  *</p>
+                    <select name="" id="gender">
+                        <option value="">Select Title</option>
+                        <option value="Mr">Mr</option>
+                        <option value="Ms">Ms</option>
+                    </select>               
+                    <p style="color: gray; font-size: small;margin-bottom: 5px;">FIRST NAME *</p>
+                    <input  type="text" >     
+                    <p style="color: gray; font-size: small;margin-bottom: 5px;">LAST NAME *</p>
+                    <input type="text">
+                    <p style="color: gray; font-size: small;margin-bottom: 5px;">EMAIL ADDRESS *</p>
+                    <input type="email" >
+                    <p style="color: gray; font-size: small;margin-bottom: 5px;">PHONE NUMBER *</p>
+                    <input type="tel">  
+                   </div> 
+                </div>
+                    <div class="delivery_checkout">
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">COUNTRY *</p>
+                        <select name="" id="checkout_country">
+                             <option value="">Select country</option>
+                             <option value="">INDIA</option>
+                             <option value="">SINGAPORE</option>
+                             <option value="">DUBAI</option>
+                             <option value="">MALAYASIA</option>
+                        </select>
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">PIN-CODE/ZIP-CODE *</p>
+                        <input type="number" placeholder="6 Digit Pincode">
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">STATE *</p>
+                        <input type="number" >
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">CITY *</p>
+                        <input type="number" >
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">STREET ADDRESS / BUILDING / LOCALITY *</p>
+                        <input type="number" placeholder="Flat no,House no,Street name" >
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">NICK NAME*</p>
+                        <input type="number" >
+                        <p style="color: gray; font-size: small;margin-bottom: 5px; letter-spacing: 2px;">ALTERNATE MOBILE(optional) *</p>
+                        <input type="number">              
+                    </div>
+                <div style="margin: 50px 0px;">
+                <button  style="font-size:small; margin-left:0px; padding:10px 20px; border: none; background-color: black; color:white;">CONTINUE TO REVIEW ORDER</button>
+                </div>
+            </div>
+           </div>
         </div>
     </div>
     <div class="checkout_payment1">
@@ -80,5 +140,7 @@
     
     let div_username=document.querySelector(".checkout_username>p")
     div_username.innerHTML='<i class="fa-regular fa-circle-check fa-2x"></i>'+"SIGNED IN AS USERNAME";
+
+       
 
 </script>
