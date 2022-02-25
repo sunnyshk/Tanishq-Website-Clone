@@ -3,6 +3,9 @@ let totalD = document.querySelector(".totl");
 let totalItm = document.querySelector(".titm");
 let upy = document.querySelector(".upy");
 let finalDiscount = document.querySelector(".fdisc");
+// import {footer} from "../script/footer.js"
+// let footerDiv = document.getElementById("footer");
+// footerDiv.innerHTML = footer()
 
 let mdiv = document.getElementById("cart-mid");
 cartDisplay(cartData, mdiv);
@@ -201,3 +204,5 @@ function displayTotal() {
     }
   });
 }
+
+
