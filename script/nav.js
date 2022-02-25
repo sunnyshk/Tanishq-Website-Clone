@@ -25,7 +25,7 @@ function navbar(){
                 <div id="amarmewolist">
                     <div id="amargender">
                         <p style="font-weight:lighter"><b>GENDER</b></p>
-                        <p style="font-weight:lighter; margin-top:15px">MEN </p>
+                        <p style="font-weight:lighter; margin-top:15px"> <a href="../pages/men.html">MEN </a></p>
                         <P style="font-weight:lighter;margin-top:15px"><a href="../pages/women.html"> WOMEN</a></P>
                         <p style="font-weight:lighter">KIDS</p>
                         <p style="font-weight:lighter">UNISEX</p>

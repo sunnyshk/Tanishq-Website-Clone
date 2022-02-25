@@ -13,17 +13,6 @@
 #slider img{
     width: 100%;
 }
-@keyframes img {
-
-    from {
-        transform: translateX(100%);
-      }
-    
-      to {
-        transform: translateX(-100%);
-      }
-    
-}
 #amarplan{
     position: absolute;
     top: 0;
@@ -193,4 +182,8 @@
 }
 #amarconnect>img{
     width: 350px;
+}
+
+#footer{
+    margin-top: 10px;
 }

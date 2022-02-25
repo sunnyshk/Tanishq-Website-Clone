@@ -1,7 +1,7 @@
 import navbar from "/script/nav.js";
-import {footer,amarshowplace} from '../script/footer.js'
+import {footer} from '../script/footer.js'
 
-let nav=document.getElementById('amarcont');
+let nav=document.getElementById('amarcont'),show=0;
 nav.innerHTML=navbar();
 
 var adimg=[
@@ -29,3 +29,14 @@ setInterval(()=>{
 
 var showfooter=document.getElementById('footer');
 showfooter.innerHTML=footer()
+
+document.querySelector('.fa-angle-double-down').addEventListener('click',()=>{
+    if(show==0){
+        document.getElementById('doworkamar').style.display="block"
+        show=1
+    }
+    else{
+        document.getElementById('doworkamar').style.display="none"
+        show=0
+    }
+});
