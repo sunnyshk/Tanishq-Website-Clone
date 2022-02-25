@@ -61,6 +61,7 @@ function categoryw() {
 }
 
 function displayData(mensData) {
+  console.log(mensData)
   document.querySelector("#containermen").innerHTML = "";
 
   mensData.map(function (data) {
@@ -109,6 +110,20 @@ function displayData(mensData) {
     document.querySelector("#containermen").append(div);
   });
 }
+
+// function addToCart(elem) {
+//   if (cart.some((item) => item.id == elem.id)) {
+//     alert("Items is already in the cart");
+//   } else {
+//     let item = Men_Gold_Data.find((product) => product.id === elem.id);
+//     cart.push({
+//       ...item,
+//       units: 1,
+//     });
+//     console.log(cart);
+//     localStorage.setItem("cartItms", JSON.stringify(cart));
+//   }
+// }
 
 
 
