@@ -61,6 +61,7 @@ function categoryw() {
 }
 
 function displayData(mensData) {
+  console.log(mensData)
   document.querySelector("#containermen").innerHTML = "";
 
   mensData.map(function (data) {
