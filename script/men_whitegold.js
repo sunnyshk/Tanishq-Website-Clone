@@ -2,69 +2,42 @@
 // let nav=document.getElementById('hamcont');
 // nav.innerHTML=navbar();
 
-var mensData = JSON.parse(localStorage.getItem("mensData"));
-console.log(mensData);
+var mensDataWhitegold = JSON.parse(localStorage.getItem("mensDataWhitegold"));
+console.log(mensDataWhitegold);
 
 var cart = JSON.parse(localStorage.getItem("CartItems")) || [];
 
-displayData(mensData);
+displayData(mensDataWhitegold);
 
 // var wishlist =JSON.parse(localStorage.getItem("WishlistItems"))||[]
 
-// displayData(mensData);
+// displayData(mensDataWhitegold);
 
 
 function handlePriceSort() {
   var selected = document.querySelector("#priceSort").value;
   console.log(selected);
   if (selected == "high") {
-    mensData.sort(function (a, b) {
+    mensDataWhitegold.sort(function (a, b) {
       return b.price - a.price;
     });
   }
   if (selected == "low") {
-    mensData.sort(function (a, b) {
+    mensDataWhitegold.sort(function (a, b) {
       return a.price - b.price;
     });
   }
 
-  displayData(mensData);
+  displayData(mensDataWhitegold);
 }
 
-// displayData(mensData)
+// displayData(mensDataWhitegold)
 
-function categoryg() {
-  var selectcategory = document.querySelector(".categoryG").value;
-  console.log(selectcategory);
-  var categoryname = mensData.filter(function (elem) {
-    return elem.type == selectcategory;
-  });
-  displayData(categoryname);
-}
 
-function categoryd() {
-  var selectcategory = document.querySelector(".categoryD").value;
-  console.log(selectcategory);
-  var categoryname = mensData.filter(function (elem) {
-    return elem.type == selectcategory;
-  });
-  displayData(categoryname);
-}
-
-function categoryw() {
-  var selectcategory = document.querySelector(".categoryW").value;
-  console.log(selectcategory);
-  var categoryname = mensData.filter(function (elem) {
-    return elem.type == selectcategory;
-  });
-  displayData(categoryname);
-}
-
-function displayData(mensData) {
-  console.log(mensData)
+function displayData(mensDataWhitegold) {
   document.querySelector("#containermen").innerHTML = "";
 
-  mensData.map(function (data) {
+  mensDataWhitegold.map(function (data) {
     var div = document.createElement("div");
 
     var img = document.createElement("img");
@@ -110,20 +83,6 @@ function displayData(mensData) {
     document.querySelector("#containermen").append(div);
   });
 }
-
-// function addToCart(elem) {
-//   if (cart.some((item) => item.id == elem.id)) {
-//     alert("Items is already in the cart");
-//   } else {
-//     let item = Men_Gold_Data.find((product) => product.id === elem.id);
-//     cart.push({
-//       ...item,
-//       units: 1,
-//     });
-//     console.log(cart);
-//     localStorage.setItem("cartItms", JSON.stringify(cart));
-//   }
-// }
 
 
 
