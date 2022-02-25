@@ -90,3 +90,6 @@ Men_Diamond_Data=[
 	    type:"Diamond"
     },
 ]
+var MD=JSON.stringify(Men_Diamond_Data);
+localStorage.setItem("mensDataDiamond",MD);
+console.log(MD)
