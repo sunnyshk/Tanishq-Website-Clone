@@ -83,7 +83,11 @@ function displayData(WomenDataGold) {
 
 function addtocart(data) {
   console.log(data, "data");
-  cart.push(data);
+  cart.push({
+    ...data,
+    units:1,
+  });
   localStorage.setItem("CartItems", JSON.stringify(cart));
+  localStorage.setItem('cartLength', cart.length);
   alert("added successfully");
 }
