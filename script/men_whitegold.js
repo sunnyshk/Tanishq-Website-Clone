@@ -41,6 +41,7 @@ function displayData(mensDataWhitegold) {
     var div = document.createElement("div");
 
     var img = document.createElement("img");
+    img.setAttribute("class","ham")
     img.setAttribute("src", data.image_link);
 
     var divr = document.createElement("div");

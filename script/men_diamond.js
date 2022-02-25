@@ -42,6 +42,7 @@ function displayData(mensDataDiamond) {
     var div = document.createElement("div");
 
     var img = document.createElement("img");
+    img.setAttribute("class","ham")
     img.setAttribute("src", data.image_link);
 
     var divr = document.createElement("div");
@@ -90,7 +91,10 @@ function displayData(mensDataDiamond) {
 
 function addtocart(data) {
   console.log(data, "data");
-  cart.push(data);
+  cart.push({
+    ...data,
+    units:1,
+  });
   localStorage.setItem("CartItems", JSON.stringify(cart));
   alert("added successfully");
 }

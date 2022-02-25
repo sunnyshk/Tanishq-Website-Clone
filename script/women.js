@@ -71,6 +71,7 @@ womensData.map(function (data){
 
    //create image
    var img = document.createElement('img');
+   img.setAttribute("class","ham")
    img.setAttribute("src",data.image_link);
 
    //name creation
