@@ -111,12 +111,27 @@ function displayData(mensData) {
   });
 }
 
-
-
-
-// function addtocart(data) {
-//   console.log(data, "data");
-//   cart.push(data);
-//   localStorage.setItem("CartItems", JSON.stringify(cart));
-//   alert("added successfully");
+// function addToCart(elem) {
+//   if (cart.some((item) => item.id == elem.id)) {
+//     alert("Items is already in the cart");
+//   } else {
+//     let item = Men_Gold_Data.find((product) => product.id === elem.id);
+//     cart.push({
+//       ...item,
+//       units: 1,
+//     });
+//     console.log(cart);
+//     localStorage.setItem("cartItms", JSON.stringify(cart));
+//   }
 // }
+
+
+function addtocart(data) {
+  console.log(data, "data");
+  cart.push({
+    ...data,
+    units : 1,
+  });
+  localStorage.setItem("CartItems", JSON.stringify(cart));
+  alert("added successfully");
+}

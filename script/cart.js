@@ -1,4 +1,4 @@
-let cartData = JSON.parse(localStorage.getItem("cartItms")) || [];
+let cartData = JSON.parse(localStorage.getItem("CartItems")) || [];
 let totalD = document.querySelector(".totl");
 let totalItm = document.querySelector(".titm");
 let upy = document.querySelector(".upy");
@@ -97,7 +97,7 @@ function removeCartItm(id) {
   let ndiv = document.querySelector("#cart-mid");
   cartData = cartData.filter((itm) => itm.id != id);
   //  localStorage.setItem('newCart' JSON.stringify(cartData));
-  localStorage.setItem("cartItms", JSON.stringify(cartData));
+  localStorage.setItem("CartItems", JSON.stringify(cartData));
   console.log(cartData);
   updateCart(cartData, ndiv);
   finalDiscount.innerHTML = `DISCOUNT<span class="disc">₹${0}</span> `;
@@ -191,7 +191,7 @@ function displayTotal() {
     displayTotal();
     let inpVal = document.getElementById("promo").value;
     if (inpVal == "masai30" || inpVal == "Masai30") {
-      let discountTotal = total*(0.30);
+      let discountTotal = total * 0.3;
       let newTotal = total - discountTotal;
       totalItm.innerHTML = `ORDER TOTAL (${totlI} ITEMS) <span class="totl">₹${newTotal}</span> `;
       upy.innerHTML = `YOU PAY <span class="upay">${newTotal}</span>`;
