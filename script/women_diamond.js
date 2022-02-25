@@ -2,6 +2,8 @@
 // let nav=document.getElementById('hamcont');
 // nav.innerHTML=navbar();
 
+
+
 var WomenDataDiamond = JSON.parse(localStorage.getItem("WomenDataDiamond"));
 console.log(WomenDataDiamond);
 
@@ -35,6 +37,7 @@ function displayData(WomenDataDiamond) {
 
     //create image
     var img = document.createElement("img");
+    img.setAttribute("class", "ham");
     img.setAttribute("src", data.image_link);
 
     //name creation
@@ -85,10 +88,19 @@ function addtocart(data) {
   console.log(data, "data");
   cart.push({
     ...data,
-    units:1,
+    units: 1,
   });
   localStorage.setItem("CartItems", JSON.stringify(cart));
-  localStorage.setItem('cartLength', cart.length);
+  localStorage.setItem("cartLength", cart.length);
 
   alert("added successfully");
 }
+
+var total_cart = localStorage.getItem("cartLength");
+
+if (total_cart > 0) {
+  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+}
+
+var name = JSON.parse(localStorage.getItem("name"));
+document.getElementById("amarname").textContent = name;

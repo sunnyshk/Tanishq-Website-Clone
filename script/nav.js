@@ -11,7 +11,7 @@ function navbar(){
         <div>GOLDEN HARVEST</div>
         <div>BOOK AN APPOINTEMENT</div>
         <div>WISHLIST</div>
-        <div id="amartocart"> <a href="../pages/cart.html">CART(0)</a></div>
+        <div> <a  id="amartocart" href="../pages/cart.html">CART(0)</a></div>
     </div>
 </div>
 <hr>

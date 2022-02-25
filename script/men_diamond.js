@@ -13,7 +13,6 @@ displayData(mensDataDiamond);
 
 // displayData(mensDataDiamond);
 
-
 function handlePriceSort() {
   var selected = document.querySelector("#priceSort").value;
   console.log(selected);
@@ -33,8 +32,6 @@ function handlePriceSort() {
 
 // displayData(mensDataDiamond)
 
-
-
 function displayData(mensDataDiamond) {
   document.querySelector("#containermen").innerHTML = "";
 
@@ -42,6 +39,7 @@ function displayData(mensDataDiamond) {
     var div = document.createElement("div");
 
     var img = document.createElement("img");
+    img.setAttribute("class", "ham");
     img.setAttribute("src", data.image_link);
 
     var divr = document.createElement("div");
@@ -85,17 +83,25 @@ function displayData(mensDataDiamond) {
   });
 }
 
-
-
-
 function addtocart(data) {
   console.log(data, "data");
   cart.push({
     ...data,
-    units:1,
+    units: 1,
   });
   localStorage.setItem("CartItems", JSON.stringify(cart));
-  localStorage.setItem('cartLength', cart.length);
+  localStorage.setItem("cartLength", cart.length);
 
   alert("added successfully");
 }
+
+var total_cart = localStorage.getItem("cartLength");
+if (total_cart > 0) {
+  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+}
+
+var name = JSON.parse(localStorage.getItem("name"));
+document.getElementById("amarname").textContent = `Login(${name})`;
+
+
+
