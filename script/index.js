@@ -1,9 +1,10 @@
-import navbar from "/script/nav.js";
+import inavbar from "../script/indexscp.js";
 import { footer } from "../script/footer.js";
 
 let nav = document.getElementById("amarcont"),
   show = 0;
-nav.innerHTML = navbar();
+nav.innerHTML = inavbar();
+console.log(nav)
 
 var adimg = [
     {
@@ -43,20 +44,3 @@ document
       show = 0;
     }
   });
-
-var total_cart = localStorage.getItem("cartLen");
-if (total_cart > 0) {
-  document.getElementById("amartocart").innerHTML = `CART(${total_cart})`;
-}
-
-var usrname = JSON.parse(localStorage.getItem("name"))||[];
-document.getElementById("amarname").textContent = `${usrname}`;
-
-var userdelet = document.getElementById("gotologin");
-
-userdelet.addEventListener("click", function () {
-  console.log(userdelet);
-  localStorage.removeItem("logInUserdata");
-  localStorage.removeItem("name");
-  
-});
