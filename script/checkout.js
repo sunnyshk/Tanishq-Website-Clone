@@ -1,4 +1,4 @@
-  let userName = JSON.parse(localStorage.getItem("userDataBase"));
+  let userName = JSON.parse(localStorage.getItem("logInUserdata"));
 
     let div_username=document.querySelector(".checkout_username>p")
     div_username.innerHTML='<i class="fa-regular fa-circle-check fa-2x"></i>'+`SIGNED IN AS ${userName[0].name}`;
@@ -112,3 +112,67 @@
      document.getElementById('order_review').checked = false;
         
    }
+
+   function pay_order(){
+     window.location.href="payment.html";
+   }
+
+
+function creditCard(){
+  document.getElementById('credit_details').checked = true;
+  document.getElementById('netbanking').checked = false;
+  document.getElementById('wallet').checked = false;
+}
+
+function netbanking(){
+  document.getElementById('credit_details').checked = false;
+  document.getElementById('netbanking').checked = true;
+  document.getElementById('wallet').checked = false;
+}
+
+function wallet(){
+  document.getElementById('credit_details').checked = false;
+  document.getElementById('netbanking').checked = false;
+  document.getElementById('wallet').checked = true;
+}
+
+
+function redirect(){
+  window.location.href="checkout.html";
+}
+function otpPage(){
+  let card = document.getElementById("card_number").value;
+  let expiry = document.getElementById("exp_date").value;
+  let cvv = document.getElementById("cvv").value;
+  let holder = document.getElementById("holder_name").value;
+ 
+
+  if(card,expiry,cvv,holder){
+     window.location.href="payment_otp.html"
+  }
+  else{
+    alert('enter card details')
+  }
+}
+
+function thankyou(){
+  let otpvalue = document.getElementById("otpvalue").value;
+  if(otpvalue==1234){
+    window.location.href="thankyou.html";
+    
+  }
+  else{
+       alert("worng password-enter '1234'");
+  }
+}
+
+function tohome(){
+  window.location.href="Home.html"
+}
+
+
+
+
+
+
+
