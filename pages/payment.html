@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/checkout.css">
+    <script src="https://kit.fontawesome.com/a8241bed30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div style="position: relative;">
+    <div id="overlay_pay">
+        <div id="pay_div">
+            <div style="height:100%; width: 45%; border-right: 1px solid gray;">
+               <h2>Select a payment method</h2>
+               <div onclick="creditCard()" id="cdCard"><p><i class="fa-solid fa-credit-card"></i>Credi card or Debit card</p>
+                <p style="font-size: small;">Visa, Mastercard, Maestro, Rupay</p>
+            </div>
+               <div onclick="netbanking()" id="cdCard"><p><i class="fa-solid fa-building-columns"></i>Net Banking</p>
+                <p style="font-size: small;">Pay with Internet Banking Account</p>
+            </div>
+               <div onclick="wallet()" id="cdCard"><p><i class="fa-solid fa-wallet"></i>Wallet</p>
+                <p style="font-size: small;">Pay using a Wallet</p>
+            </div>
+            </div>
+           <div style="height:100%; width: 55%; ">
+               <input type="checkbox" id="credit_details" checked>
+               <label id="label_credit" for="credit_details">     </label>
+               <div id="enter_card">
+                   <h4>Pay with Credit/Debit Card</4>
+                 <p style="font-weight: lighter;">Card Number</p>
+                 <input id="card_number" style="width: 80%; height: 30px;"  type="number">
+                 <div style="margin-top: 30px; margin-bottom: 50px;">
+                     <label   style="font-weight: lighter;" for="">Expiry date</label>
+                     <input id="exp_date" style="height: 30px;" type="date">
+                     <label   style="font-weight: lighter;" for="">CVV</label>
+                     <input id="cvv" style="height: 30px;" type="password">
+                 </div>
+                 <label   style="font-weight: lighter;" for="">Card Holder's Name</label>
+                 <input id="holder_name" style="width:95%;height: 30px;" type="text">
+                 <button onclick="otpPage()" style=" width:80%;height:40px;color:white;margin-top: 50px;margin-left: 40px;
+                 border: none; background-color: rgb(176,161,110);">PAY NOW</button>
+                  <button onclick="redirect()" style=" width:80%;height:40px;color:rgb(176,161,110);margin-top: 50px;margin-left: 40px;
+                  border: none; background-color: WHITE;">CANCEL PAYMENT</button>
+                 
+               </div>
+               <input type="checkbox" id="netbanking">
+               <label id="label_netbanking" for="netbanking">   </label>
+               <div id="enter_login">
+                   <h4>Pay using Netbanking</h4>
+                  <p>Choose a Bank</p>
+                  <p>State Bank</p>
+                  <p>HDFC Bank</p>
+                  <p>Axis Bank</p>
+                  <p>ICICI Bank</p>
+                  <p>Kotak Mahindra Bank</p>
+                  <button onclick="otpPage()" style=" width:80%;height:40px;color:white;margin-top: 50px;margin-left: 40px;
+                  border: none; background-color: rgb(176,161,110);">PAY NOW</button>
+                   <button onclick="redirect()" style=" width:80%;height:40px;color:rgb(176,161,110);margin-top: 50px;margin-left: 40px;
+                   border: none; background-color: WHITE;">CANCEL PAYMENT</button>
+
+               </div>
+               <input  type="checkbox" id="wallet">
+               <label id="label_wallet" for="wallet">    </label>
+               <div id="enter_wallet">
+                   <h4>Pay using Wallet</h4>
+                  <p>Choose a wallet</p>
+                  <p>Mobikwik</p>
+                  <p>Paytm</p>
+                  <p>PayZapp</p>
+                  <p>Ola Money</p>
+                  <p>Airtel Money</p>
+                  <p>Amazon Pay</p>
+                  <p>Freecharge</p>
+                  <p>Jio Money</p>
+                  <button onclick="otpPage()" style=" width:80%;height:40px;color:white;margin-top: 50px;margin-left: 40px;
+                  border: none; background-color: rgb(176,161,110);">PAY NOW</button>
+                   <button onclick="redirect()" style=" width:80%;height:40px;color:rgb(176,161,110);margin-top: 50px;margin-left: 40px;
+                   border: none; background-color: WHITE;">CANCEL PAYMENT</button>
+
+               </div>
+           </div>
+        </div>
+    </div>  
+    <div id="pay_head">
+        <div>
+        <a href="Home.html">Home</a>
+        </div>
+            <img src="https://www.tanishq.co.in/wps/wcm/connect/tanishq/0465d640-7ee4-4354-a509-b14c6dc05cd8/TanishqTLogo.png?MOD=AJPERES" alt="">
+            <div style="display: block; padding-left: 10px; margin-top: 40px;">
+                <p style="font-size: large;">TANISHQ</p>
+            <p style="font-size: small; ">Payment Done Towards Titan Company Limited</p>
+            </div>
+        </div>
+             
+   </div>
+</body>
+</html>
+<script src="/script/checkout.js">
+
+</script>

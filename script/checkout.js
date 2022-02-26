@@ -1,4 +1,4 @@
-  let userName = JSON.parse(localStorage.getItem("userDataBase"));
+  let userName = JSON.parse(localStorage.getItem("logInUserdata"));
 
     let div_username=document.querySelector(".checkout_username>p")
     div_username.innerHTML='<i class="fa-regular fa-circle-check fa-2x"></i>'+`SIGNED IN AS ${userName[0].name}`;
@@ -47,7 +47,7 @@
 
 
             let nameP=document.createElement("p");
-            nameP.textContent=firstName+" "+lastname;
+            nameP.textContent=firstName+" ";
             let mailId=document.createElement("p");
             mailId.textContent=email;
             let mobNum=document.createElement("p");
@@ -56,9 +56,42 @@
             addre.textContent=city+" "+state+" "+zipcode;
             // let couty=document.createElement("p");
             // couty.textContent=country.value;
+
+            let cart_items = document.getElementById("added_items");
+
+
+            let data = JSON.parse(localStorage.getItem("CartItems"))
+
+            data.map((ele)=>{
+                let div = document.createElement("div");
+                let image = document.createElement("img");
+                image.src=ele.image_link;
+                let amount= document.createElement("h5")
+                amount=`Rs.`+ele.price;
+                // getTotal(ele.price);
+                let pro_name= document.createElement("h3");
+                pro_name.textContent=ele.name;
+                let type = document.createElement("p");
+                type.textContent=ele.type;
+                div.append(image,pro_name,type,amount)
+                cart_items.append(div);
+            });
+         let total =0;
+         for(var i=0; i<data.length; i++){
+             total+=data[i].price;
+             if(total==0){
+                 total="No items add";
+             }
+         }
+        
+        let amount = document.createElement("h4");
+        amount.textContent="Rs."+total;
+        let addHead = document.createElement("h2");
+        addHead.textContent="DELIVERY ADDRESS:";
+
             
             let address_div = document.getElementById("added_address");
-            address_div.append(nameP,mailId,mobNum,addre)
+            address_div.append(amount,addHead,nameP,mailId,mobNum,addre)
 
             document.getElementById('order_review').checked = true;
             localStorage.setItem("checkout_details",JSON.stringify(checkoutObj))
@@ -69,3 +102,77 @@
               alert("enter all the required details");
           }   
     }
+
+
+  function continue_payment(){
+    document.getElementById('checkbox_payment').checked = true;
+
+
+
+     document.getElementById('order_review').checked = false;
+        
+   }
+
+   function pay_order(){
+     window.location.href="payment.html";
+   }
+
+
+function creditCard(){
+  document.getElementById('credit_details').checked = true;
+  document.getElementById('netbanking').checked = false;
+  document.getElementById('wallet').checked = false;
+}
+
+function netbanking(){
+  document.getElementById('credit_details').checked = false;
+  document.getElementById('netbanking').checked = true;
+  document.getElementById('wallet').checked = false;
+}
+
+function wallet(){
+  document.getElementById('credit_details').checked = false;
+  document.getElementById('netbanking').checked = false;
+  document.getElementById('wallet').checked = true;
+}
+
+
+function redirect(){
+  window.location.href="checkout.html";
+}
+function otpPage(){
+  let card = document.getElementById("card_number").value;
+  let expiry = document.getElementById("exp_date").value;
+  let cvv = document.getElementById("cvv").value;
+  let holder = document.getElementById("holder_name").value;
+ 
+
+  if(card,expiry,cvv,holder){
+     window.location.href="payment_otp.html"
+  }
+  else{
+    alert('enter card details')
+  }
+}
+
+function thankyou(){
+  let otpvalue = document.getElementById("otpvalue").value;
+  if(otpvalue==1234){
+    window.location.href="thankyou.html";
+    
+  }
+  else{
+       alert("worng password-enter '1234'");
+  }
+}
+
+function tohome(){
+  window.location.href="Home.html"
+}
+
+
+
+
+
+
+

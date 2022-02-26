@@ -452,3 +452,138 @@ label{
 .bottom_icons>i{
     padding-right: 60px;
 }
+
+
+
+
+
+#added_items{
+  width:50%;
+  text-align: center;
+  border-bottom: 1px rgb(231, 228, 228);
+}
+#added_items>div>img{
+    width: 50%;
+    height: 50%;
+}
+
+
+.images>img{
+    width:40px;
+    height: 40px;
+    padding-right: 20px;
+}
+
+
+#pay_head{
+  width: 100%;
+  height:180px;
+  background-color: rgb(176,161,110);
+  display: flex;
+  color:white;
+  z-index: 9;
+
+}
+#pay_head>div>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 200px;
+    padding-top: 20px;
+}
+#pay_head>img{
+  width: 50px;
+  height: 55px;
+  background-color: white;
+  margin-top: 60px;
+  margin-left: 100px;
+  border-radius: 3px;
+}
+
+
+#overlay_pay{
+  position: absolute;
+    width: 55%;
+    height: 800px;
+    margin-left: 330px;
+}
+#pay_div{
+   width:100%;
+   height: 70%;
+   margin-top: 130px;
+   background-color: white;
+   display: flex;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#cdCard{
+    width: 97%;
+    height: max-content;
+    padding: 3px 5px;
+    margin:20px 0;
+}
+#cdCard:hover{
+    background-color: rgb(214, 208, 208);
+}
+#cdCard>p>i{
+  color:rgb(176,161,110);
+  padding: 0 5px;
+}
+
+
+
+
+
+
+#credit_details{
+    display: none;
+}
+#enter_card{
+    display: none;
+}
+/* #label_credit{
+    display: none;
+} */
+#credit_details:checked ~ #enter_card{
+   display: block;
+}
+
+
+#netbanking{
+    display: none;
+}
+#enter_login{
+    display: none;
+}
+#netbanking:checked ~ #enter_login{
+   display: block;
+}
+
+
+#wallet{
+    display: none;
+}
+#enter_wallet{
+    display: none;
+}
+#wallet:checked ~ #enter_wallet{
+   display: block;
+}
+
+#otp{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#otp>img{
+    width: 70px;
+    height: 75px;
+    background-color: white;
+    outline: 1px solid black;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
