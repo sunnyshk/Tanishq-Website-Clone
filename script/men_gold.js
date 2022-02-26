@@ -75,6 +75,10 @@ function displayData(mensDataGold) {
     btn.textContent = "MOVE TO BAG";
 
     btn.addEventListener("click", function () {
+      if (!localStorage.getItem("name")) {
+        alert("Please Login to continue");
+        return;
+      }
       addtocart(data);
     });
 
@@ -96,10 +100,18 @@ function addtocart(data) {
   alert("added successfully");
 }
 
-var total_cart = localStorage.getItem("cartLength");
+var total_cart = localStorage.getItem("cartLen");
 if (total_cart > 0) {
-  document.getElementById("amartocart").textContent = `CART(${total_cart})`;
+  document.getElementById("amartocart").innerHTML = `CART(${total_cart})`;
 }
+var usrname = JSON.parse(localStorage.getItem("name"))||[];
+document.getElementById("amarname").textContent = `${usrname}`;
 
-var name = JSON.parse(localStorage.getItem("name"));
-document.getElementById("amarname").textContent = name;
+var userdelet = document.getElementById("gotologin");
+
+userdelet.addEventListener("click", function () {
+  console.log(userdelet);
+  localStorage.removeItem("logInUserdata");
+  localStorage.removeItem("name");
+  
+});

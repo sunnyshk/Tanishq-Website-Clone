@@ -1,4 +1,4 @@
-function navbar(){
+function inavbar(){
     return `<div id="amaricon">
     <div id="amarin">
         <div>BESTSELLER</div>
@@ -6,13 +6,10 @@ function navbar(){
         <div>GOLD RATE <i class="fas fa-angle-down"></i></div>
     </div>
     <div id="amarmenu">
-        <div id="amarname"><a href='../pages/login.html'>LOGIN</a></div>
+        <div ><a href='../pages/login.html'>LOGIN</a></div>
         <div>ENCIRCLE</div>
         <div>GOLDEN HARVEST</div>
         <div>BOOK AN APPOINTEMENT</div>
-        <div>WISHLIST</div>
-        <div> <a  id="amartocart" href="../pages/cart.html">CART(0)</a></div>
-        <div ><a id="gotologin"href='../index.html'>LOGOUT</a></div>
     </div>
 </div>
 <hr>
@@ -65,4 +62,4 @@ function navbar(){
 </div>`
 }
 
-export default navbar;
+export default inavbar;
