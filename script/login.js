@@ -15,7 +15,7 @@ function signin(){
       if(regdUsers[a].emailAdd == email && regdUsers[a].passwd == pass){
           window.location.href = "home.html";
           alert("You Can Shop Now With Best Offers!");
-         continue;
+         break;
       }
      
   }
